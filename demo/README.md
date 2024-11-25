@@ -7,7 +7,7 @@ Demo Code for Reconstructing Garments from a Single Image (Dresses as an Example
 - Downloading required models and data for GarVerseLOD from [Google Drive](https://drive.google.com/file/d/1ylz5EoVFPmEAhO1cwUjO_zfa-oz5n608/view?usp=sharing). 
 
   ```
-  cd GarVerseLOD/
+  cd GarVerseLOD/demo/dress_demo/
   unzip support_data.zip
   ```
 
