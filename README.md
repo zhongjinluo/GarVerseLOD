@@ -1,5 +1,5 @@
 # GarVerseLOD
-This repository includes the related code of *GarVerseLOD*.
+This repository includes the related code of GarVerseLOD.
 
 > **GarVerseLOD**: High-Fidelity 3D Garment Reconstruction from a Single In-the-Wild Image using a Dataset with Levels of Details
 >
@@ -17,7 +17,7 @@ We propose a hierarchical framework to recover different levels of garment detai
 
 ```
 git clone https://github.com/zhongjinluo/GarVerseLOD.git
-cd GarVerseLOD
+cd GarVerseLOD/
 conda env create -f environment.yml
 conda activate garverselod
 ```
@@ -26,3 +26,29 @@ This system has been tested with Python 3.8.19, PyTorch 1.13.1, PyTorch3D 0.7.1 
 
 ## Demo
 To run our system, please refer to [demo/README.md](demo/) for instructions.
+
+## Dataset
+
+Coming soon.
+
+## Citation
+
+```bibtex
+@article{luo2024garverselod,
+  title={GarVerseLOD: High-Fidelity 3D Garment Reconstruction from a Single In-the-Wild Image using a Dataset with Levels of Details},
+  author={Luo, Zhongjin and Liu, Haolin and Li, Chenghong and Du, Wanghao and Jin, Zirong and Sun, Wanhu and Nie, Yinyu and Chen, Weikai and Han, Xiaoguang},
+  journal={ACM Transactions on Graphics (TOG)},
+  year={2024}
+}  
+```
+
+
+
+## Acknowledgments
+
+The code benefits from or utilizes the following projects. Many thanks to their contributions.
+
+- [PIFu](https://github.com/shunsukesaito/PIFu), [ICON](https://github.com/YuliangXiu/ICON), [ECON](https://github.com/YuliangXiu/ECON)
+- [smplx](https://github.com/vchoutas/smplx), [PyMAF-X](https://github.com/HongwenZhang/PyMAF-X), [animatable_nerf](https://github.com/zju3dv/animatable_nerf)
+- [pytorch3d](https://github.com/facebookresearch/pytorch3d), [pytorch-nicp](https://github.com/wuhaozhe/pytorch-nicp), [NeuralJacobianFields](https://github.com/ThibaultGROUEIX/NeuralJacobianFields)
+- [ControlNet](https://github.com/lllyasviel/ControlNet), [T2I-Adapter](https://github.com/TencentARC/T2I-Adapter)
