@@ -42,8 +42,6 @@ Coming soon.
 }  
 ```
 
-
-
 ## Acknowledgments
 
 The code benefits from or utilizes the following projects. Many thanks to their contributions.
