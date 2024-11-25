@@ -33,8 +33,8 @@ Demo Code for Reconstructing Garments from a Single Image (Dresses as an Example
   │   │   ├── 2_fine
   │   │   ├── 3_fitting
   │   │   ├── inputs
-  │   │       ├── imgs
-  │   │       └── masks
+  │   │   │   ├── imgs
+  │   │   │   └── masks
   │   │   └── support_data # GarVerseLOD
   ```
 ### Running Demo
