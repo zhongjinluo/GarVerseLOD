@@ -1,6 +1,46 @@
 ## Demo
 
-To use our prepared inputs, please follow these instructions:
+Demo Code for Reconstructing Dresses from a Single Image.
+
+### Downloading required models and extra data
+
+- Required Models and Data for HPS: We use [ICON's codebase](https://github.com/YuliangXiu/ICON) for SMPL optimization. Here we use [PyMAF](https://github.com/HongwenZhang/PyMAF#necessary-files) for SMPL estimation, but you can easily switch to [PARE (SMPL)](https://github.com/mkocabas/PARE#demo), [PIXIE (SMPL-X)](https://pixie.is.tue.mpg.de/), [HybrIK (SMPL)](https://github.com/Jeff-sjtu/HybrIK) with this codebase. Many thanks to [@YuliangXiu](https://github.com/YuliangXiu) for his excellent work. Please register on ICON's website by following the instructions at https://github.com/YuliangXiu/ICON/blob/master/docs/installation.md, and then download the required models for HPS:
+
+  ```
+  cd demo/dress_demo/1_coarse/ICON_get_smpl/
+  bash fetch_data.sh
+  bash fetch_hps.sh
+  ```
+
+- Required Models and Data for GarVerseLOD
+
+- The directory structure is expected as follows:
+
+  ```
+  ├── demo
+  │   ├── dress_demo
+  │   │   ├── 0_normal_estimator
+  │   │   ├── 1_coarse
+  │   │   │   ├── ICON_get_smpl
+  │   │   │   │   ├── data # HPS
+  │   │   │   ├── smpl_lbs_to_garment
+  │   │   │   └── tpose_garment_estimator
+  │   │   ├── 2_fine
+  │   │   ├── 3_fitting
+  │   │   ├── inputs
+  │   │       ├── imgs
+  │   │       └── masks
+  │   │   └── support_data # GarVerseLOD
+  ```
+### Running Demo
+  ```
+bash demo.sh
+  ```
+Then you can find all the results in `outputs/results/`. 
+
+### Running Demo Step by Step
+
+To walk through our system step by step, please adhere to the following instructions:
 
 - Get normal map
 
@@ -39,7 +79,7 @@ To use our prepared inputs, please follow these instructions:
   bash 3_fitting/21_refine.sh
   ```
 
-Then you can find all the results in `outputs/results/`. The current version only provides code for dresses. If the result of nicp is not satisfactory, try adjusting the loss weights.: `3_fitting/nicp/config/cloth.json`
+Then you can find all the results in `outputs/results/`. If the result of nicp is not satisfactory, try adjusting the loss weights: `3_fitting/nicp/config/cloth.json`.
 
 ## Prepare Your Data
 
