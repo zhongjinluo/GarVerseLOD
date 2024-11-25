@@ -22,14 +22,14 @@ conda env create -f environment.yml
 conda activate garverselod
 ```
 
-This system has been tested with Python 3.8.19, PyTorch 1.13.1, PyTorch3D 0.7.1 and CUDA 11.7 on Ubuntu 18.04.
+This system has been tested with Python 3.8.19, PyTorch 1.13.1, PyTorch3D 0.7.1 and CUDA 11.7 on Ubuntu 20.04.
 
 ## Demo
 To run our system, please refer to [demo/README.md](demo/) for instructions.
 
 ## Dataset
 
-Coming soon.
+Please refer to [dataset/README.md](dataset/) for instructions.
 
 ## Citation
 
@@ -44,7 +44,7 @@ Coming soon.
 
 ## Acknowledgments
 
-The code benefits from or utilizes the following projects. Many thanks to their contributions.
+The code benefits from or utilizes the folowing projects. Many thanks to their contributions.
 
 - [PIFu](https://github.com/shunsukesaito/PIFu), [ICON](https://github.com/YuliangXiu/ICON), [ECON](https://github.com/YuliangXiu/ECON)
 - [smplx](https://github.com/vchoutas/smplx), [PyMAF-X](https://github.com/HongwenZhang/PyMAF-X), [animatable_nerf](https://github.com/zju3dv/animatable_nerf)

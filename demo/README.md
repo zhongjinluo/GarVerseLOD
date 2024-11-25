@@ -1,4 +1,4 @@
-## Demo
+## GarVerseLOD Demo
 
 Demo Code for Reconstructing Garments from a Single Image (Dresses as an Example).
 
