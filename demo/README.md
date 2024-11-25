@@ -48,4 +48,4 @@ To prepare your own data, you need to:
 - Remove the background and crop the image: [rembg](https://github.com/danielgatis/rembg), [ICON](https://github.com/YuliangXiu/ICON)
 - Annotate the garment mask. **Please note that the mask should cover the entire garment, including the invisible region (e.g., the area obstructed by the body, as shown in the following image)**
 
-<img src="./mask.png">
+<img src="./dress_mask.png">
