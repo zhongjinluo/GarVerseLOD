@@ -13,4 +13,15 @@ This repository includes the related code of *GarVerseLOD*.
 
 We propose a hierarchical framework to recover different levels of garment details by leveraging the garment shape and deformation priors from the GarVerseLOD dataset. Given a single clothed human image searched from Internet, our approach is capable of generating high-fidelity 3D standalone garment meshes that exhibit realistic deformation and are well-aligned with the input image.
 
+## Install
+
+```
+git clone https://github.com/zhongjinluo/GarVerseLOD.git
+cd GarVerseLOD
+conda env create -f environment.yml
+conda activate garverselod
+```
+
+This system has been tested with Python 3.8.19, PyTorch 1.13.1, PyTorch3D 0.7.1 and CUDA 11.7 on Ubuntu 18.04.
+
 ## Demo
