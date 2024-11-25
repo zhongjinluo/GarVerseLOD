@@ -13,4 +13,4 @@ This repository includes the related code of *GarVerseLOD*.
 
 We propose a hierarchical framework to recover different levels of garment details by leveraging the garment shape and deformation priors from the GarVerseLOD dataset. Given a single clothed human image searched from Internet, our approach is capable of generating high-fidelity 3D standalone garment meshes that exhibit realistic deformation and are well-aligned with the input image.
 
-**The code is coming soon.**
+## Demo
