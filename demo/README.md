@@ -8,7 +8,7 @@ To use our prepared inputs, please follow these instructions:
   bash 0_normal_estimator/00_predict_normal.sh
   ```
 
-- Get coarse garment (Waiting for simplification: we currently use the ICON code to predict smpl, which actually includes some unnecessary operations)
+- Get coarse garment
 
   ```
   bash 1_coarse/00_get_smpl.sh
