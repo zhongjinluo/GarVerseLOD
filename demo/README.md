@@ -4,15 +4,20 @@ Demo Code for Reconstructing Garments from a Single Image (Dresses as an Example
 
 ### Downloading required models and extra data
 
-- Required Models and Data for HPS: We use [ICON's codebase](https://github.com/YuliangXiu/ICON) for SMPL optimization. Here we use [PyMAF](https://github.com/HongwenZhang/PyMAF#necessary-files) for SMPL estimation, but you can easily switch to [PARE (SMPL)](https://github.com/mkocabas/PARE#demo), [PIXIE (SMPL-X)](https://pixie.is.tue.mpg.de/), [HybrIK (SMPL)](https://github.com/Jeff-sjtu/HybrIK) with this codebase. Many thanks to [@YuliangXiu](https://github.com/YuliangXiu) for his excellent work. Please register on ICON's website by following the instructions at https://github.com/YuliangXiu/ICON/blob/master/docs/installation.md, and then download the required models for HPS:
+- Downloading required models and data for GarVerseLOD from [Google Drive](https://drive.google.com/file/d/1ylz5EoVFPmEAhO1cwUjO_zfa-oz5n608/view?usp=sharing). 
 
   ```
-  cd demo/dress_demo/1_coarse/ICON_get_smpl/
+  cd GarVerseLOD/
+  unzip support_data.zip
+  ```
+
+- Required Models and Data for HPS: We use [ICON's codebase](https://github.com/YuliangXiu/ICON) for SMPL optimization. Here we use [PyMAF](https://github.com/HongwenZhang/PyMAF#necessary-files) for SMPL estimation, but you can easily switch to [PARE (SMPL)](https://github.com/mkocabas/PARE#demo), [PIXIE (SMPL-X)](https://pixie.is.tue.mpg.de/), [HybrIK (SMPL)](https://github.com/Jeff-sjtu/HybrIK) with this codebase. Many thanks to [@YuliangXiu](https://github.com/YuliangXiu) for his excellent work. Please register on ICON's website by following [this instruction](https://github.com/YuliangXiu/ICON/blob/master/docs/installation.md) and then download the required models for HPS:
+
+  ```
+  cd GarVerseLOD/demo/dress_demo/1_coarse/ICON_get_smpl/
   bash fetch_data.sh
   bash fetch_hps.sh
   ```
-
-- Required Models and Data for GarVerseLOD
 
 - The directory structure is expected as follows:
 
@@ -36,7 +41,7 @@ Demo Code for Reconstructing Garments from a Single Image (Dresses as an Example
   ```
 bash demo.sh
   ```
-Then you can find all the results in `outputs/results/`. 
+Then you can find all the results in `outputs/results/`. You can download more prepared example inputs from our [Google Drive](https://drive.google.com/file/d/1LAWB4tuYRslJEQcn6l8uDPDfaeqKS9Yj/view?usp=sharing).
 
 ### Running Demo Step by Step
 
@@ -45,12 +50,16 @@ To walk through our system step by step, please adhere to the following instruct
 - Get normal map
 
   ```
+  # 0_normal_estimator/run.sh
+  
   bash 0_normal_estimator/00_predict_normal.sh
   ```
 
 - Get coarse garment
 
   ```
+  # 1_coarse/run.sh
+  
   bash 1_coarse/00_get_smpl.sh
   bash 1_coarse/01_get_tpose_garment_on_mean_body.sh
   bash 1_coarse/02_pose_garment.sh
@@ -59,9 +68,11 @@ To walk through our system step by step, please adhere to the following instruct
 - Get fine garment
 
   ```
+  # 2_fine/run.sh
+  
   bash 2_fine/00_format_data.sh
   bash 2_fine/01_predict_wild.sh
-  # todo: bash 2_fine/02_refine_boundary.sh
+  # bash 2_fine/02_refine_boundary.sh
   ```
 
   Here we are using 2D-aware boundary predictions, and the code for 3D-aware boundary is in preparation. We have increased the training data, and the 2D-aware results are now significantly closer to the 3D-aware boundary predictions.
@@ -69,6 +80,8 @@ To walk through our system step by step, please adhere to the following instruct
 - Registration
 
   ```
+  # 3_fitting/run.sh
+  
   # boundary fitting
   bash 3_fitting/00_format_target.sh
   bash 3_fitting/01_format_src.sh
@@ -79,7 +92,7 @@ To walk through our system step by step, please adhere to the following instruct
   bash 3_fitting/21_refine.sh
   ```
 
-Then you can find all the results in `outputs/results/`. If the result of nicp is not satisfactory, try adjusting the loss weights: `3_fitting/nicp/config/cloth.json`.
+Then you can find all the results in `outputs/results/`. If the result of nicp is not satisfactory, try adjusting the loss weights: `3_fitting/nicp/config/cloth.json`. 
 
 ## Prepare Your Data
 
