@@ -1,6 +1,6 @@
 ## Demo
 
-Demo Code for Reconstructing Dresses from a Single Image.
+Demo Code for Reconstructing Garments from a Single Image (Dresses as an Example).
 
 ### Downloading required models and extra data
 
@@ -64,7 +64,7 @@ To walk through our system step by step, please adhere to the following instruct
   # todo: bash 2_fine/02_refine_boundary.sh
   ```
 
-  Here we are using 2D-aware boundary predictions, and the code for 3D-aware boundary is in preparation. We have increased the training data, and now the 2D-aware results are actually close to the 3D-aware boundary predictions.
+  Here we are using 2D-aware boundary predictions, and the code for 3D-aware boundary is in preparation. We have increased the training data, and the 2D-aware results are now significantly closer to the 3D-aware boundary predictions.
 
 - Registration
 
