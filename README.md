@@ -25,4 +25,4 @@ conda activate garverselod
 This system has been tested with Python 3.8.19, PyTorch 1.13.1, PyTorch3D 0.7.1 and CUDA 11.7 on Ubuntu 18.04.
 
 ## Demo
-To run our system, please refer to [demo/README.md](demo/README.md) for instructions.
+To run our system, please refer to [demo/README.md](demo/) for instructions.
