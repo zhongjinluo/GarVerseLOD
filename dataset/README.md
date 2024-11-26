@@ -5,7 +5,7 @@ We present a new strategy for constructing a progressive garment dataset with le
 
 ### Fine Garment Dataset
 
-[Here](https://drive.google.com/drive/folders/1_5N8gFdjw10JPrw3NwBTMIlMWcc67p4c?usp=sharing) we provide some synthesized fine garments in the category of loose-fitting clothing (i.e., [**dresses**](https://drive.google.com/file/d/1bvCO8hoZqB32N-fDZR0dRvBVHadg0jFn/view?usp=sharing) and skirts).
+[Here](https://drive.google.com/drive/folders/1_5N8gFdjw10JPrw3NwBTMIlMWcc67p4c?usp=sharing) we provide some synthesized fine garments in the category of loose-fitting clothing (i.e., dresses and skirts).
 
 ### Three Basic Databases
 
