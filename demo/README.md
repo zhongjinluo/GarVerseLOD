@@ -37,11 +37,15 @@ Demo Code for Reconstructing Garments from a Single Image (Dresses as an Example
   │   │   │   └── masks
   │   │   └── support_data # GarVerseLOD
   ```
+  
+- We provide an example input in the `inputs/` folder for you to quickly explore our system. You can download more prepared example inputs from our [Google Drive](https://drive.google.com/file/d/1LAWB4tuYRslJEQcn6l8uDPDfaeqKS9Yj/view?usp=sharing).
+
 ### Running Demo
+
   ```
 bash demo.sh
   ```
-Then you can find all the results in `outputs/results/`. You can download more prepared example inputs from our [Google Drive](https://drive.google.com/file/d/1LAWB4tuYRslJEQcn6l8uDPDfaeqKS9Yj/view?usp=sharing).
+Then you can find all the results in `outputs/results/`. **You can download more prepared example inputs from our [Google Drive](https://drive.google.com/file/d/1LAWB4tuYRslJEQcn6l8uDPDfaeqKS9Yj/view?usp=sharing).**
 
 ### Running Demo Step by Step
 
