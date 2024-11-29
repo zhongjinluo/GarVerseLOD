@@ -18,7 +18,7 @@ We propose a hierarchical framework to recover different levels of garment detai
 ```
 git clone https://github.com/zhongjinluo/GarVerseLOD.git
 cd GarVerseLOD/
-conda env create -f environment.yml
+conda env create -f environment.yaml
 conda activate garverselod
 ```
 
